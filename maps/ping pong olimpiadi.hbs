@@ -1,0 +1,283 @@
+{
+
+	"name" : "Olympic Table Tennis by 丅𐒩ᘐ〇Ꭱ",
+
+	"width" : 480,
+
+	"height" : 200,
+
+	"cameraWidth" : 0,
+
+	"cameraHeight" : 0,
+
+	"maxViewWidth" : 1150,
+
+	"cameraFollow" : "player",
+
+	"spawnDistance" : 280,
+
+	"redSpawnPoints" : [
+		[ -300, 0
+		],
+		[ -420, 0
+		]
+
+	],
+
+	"blueSpawnPoints" : [
+		[ 300, 0
+		],
+		[ 420, 0
+		]
+
+	],
+
+	"canBeStored" : false,
+
+	"kickOffReset" : "full",
+
+	"bg" : { "color" : "454C5E", "height" : 0, "width" : 0, "cornerRadius" : 0, "kickOffRadius" : 0, "type" : "grass" },
+
+	"traits" : {
+		"ballArea" : { "vis" : false, "bCoef" : 1, "cMask" : ["ball" ] },
+		"goalPost" : { "radius" : 8, "invMass" : 0, "bCoef" : 0.5 },
+		"goalNet" : { "vis" : true, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		"kickOffBarrier" : { "vis" : false, "bCoef" : 0.1, "cGroup" : ["redKO","blueKO" ], "cMask" : ["red","blue" ] }
+
+	},
+
+	"vertexes" : [
+		/* 0 */ { "x" : 0, "y" : 50, "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : 0 },
+		/* 1 */ { "x" : 0, "y" : 90, "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : 0, "color" : "151517", "curve" : 0 },
+		/* 2 */ { "x" : -206, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 3 */ { "x" : -186, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 4 */ { "x" : -144, "y" : 87.00000000000003, "cMask" : ["ball" ], "curve" : 0, "color" : "151517" },
+		/* 5 */ { "x" : -144, "y" : 154, "cMask" : ["c3" ], "curve" : 30 },
+		/* 6 */ { "x" : -146, "y" : 87.00000000000003, "cMask" : ["c3" ], "color" : "151517", "curve" : 0 },
+		/* 7 */ { "x" : -146, "y" : 154, "cMask" : ["c3" ], "curve" : 30 },
+		/* 8 */ { "x" : -142, "y" : 87.00000000000003, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 9 */ { "x" : -142, "y" : 154, "cMask" : ["c3" ], "curve" : 30 },
+		/* 10 */ { "x" : 180, "y" : 160, "cMask" : ["c3" ], "curve" : 30 },
+		/* 11 */ { "x" : -180, "y" : 160, "cMask" : ["c3" ], "curve" : 30 },
+		/* 12 */ { "x" : 180, "y" : 162, "cMask" : ["c3" ], "curve" : 30 },
+		/* 13 */ { "x" : -180, "y" : 162, "cMask" : ["c3" ], "curve" : 30 },
+		/* 14 */ { "x" : 180, "y" : 164, "cMask" : ["c3" ], "curve" : 30 },
+		/* 15 */ { "x" : -180, "y" : 164, "cMask" : ["c3" ], "curve" : 30 },
+		/* 16 */ { "x" : 5, "y" : 53, "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : 5, "vis" : false },
+		/* 17 */ { "x" : 5, "y" : 85, "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : 5, "vis" : false, "color" : "151517", "curve" : 0 },
+		/* 18 */ { "x" : -5, "y" : 53, "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : -5, "vis" : false },
+		/* 19 */ { "x" : -5, "y" : 85, "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : -5, "vis" : false, "color" : "151517", "curve" : 0 },
+		/* 20 */ { "x" : -250, "y" : 179, "bCoef" : 0, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ], "vis" : false, "color" : "110900" },
+		/* 21 */ { "x" : -250, "y" : -190, "bCoef" : 0, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ], "vis" : false },
+		/* 22 */ { "x" : 250, "y" : 179, "bCoef" : 0, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ], "vis" : false, "color" : "110900" },
+		/* 23 */ { "x" : 250, "y" : -190, "bCoef" : 0, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ], "vis" : false },
+		/* 24 */ { "x" : 0, "y" : 220, "bCoef" : 0, "cMask" : ["red","blue" ], "vis" : false, "color" : "080400", "curve" : 0 },
+		/* 25 */ { "x" : 0, "y" : -200, "bCoef" : 0, "cMask" : ["red","blue" ], "vis" : false },
+		/* 26 */ { "x" : 250, "y" : 89, "bCoef" : 1, "cMask" : ["ball" ], "bias" : 20, "color" : "151517", "curve" : 0 },
+		/* 27 */ { "x" : 250, "y" : 110, "bCoef" : 1, "cMask" : ["ball" ], "bias" : 20 },
+		/* 28 */ { "x" : -250, "y" : 110, "bCoef" : 1, "cMask" : ["ball" ], "bias" : 20 },
+		/* 29 */ { "x" : -250, "y" : 89, "bCoef" : 1, "cMask" : ["ball" ], "bias" : 20, "color" : "151517", "curve" : 0 },
+		/* 30 */ { "x" : -204, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 31 */ { "x" : -184, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 32 */ { "x" : -202, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 33 */ { "x" : -182, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 34 */ { "x" : -200, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 35 */ { "x" : -180, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 36 */ { "x" : -198, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 37 */ { "x" : -178, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 38 */ { "x" : -196, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 39 */ { "x" : -176, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 40 */ { "x" : -194, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 41 */ { "x" : -174, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 42 */ { "x" : -192, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 43 */ { "x" : -172, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 44 */ { "x" : 206, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 45 */ { "x" : 186, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 46 */ { "x" : 204, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 47 */ { "x" : 184, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 48 */ { "x" : 202, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 49 */ { "x" : 182, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 50 */ { "x" : 200, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 51 */ { "x" : 180, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 52 */ { "x" : 198, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 53 */ { "x" : 178, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 54 */ { "x" : 196, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 55 */ { "x" : 176, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 56 */ { "x" : 194, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 57 */ { "x" : 174, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 58 */ { "x" : 192, "y" : 85, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 59 */ { "x" : 172, "y" : 184, "cMask" : ["c3" ], "curve" : 0, "color" : "A9B7A5" },
+		/* 60 */ { "x" : 142, "y" : 87.00000000000003, "cMask" : ["c3" ], "curve" : 0, "color" : "151517" },
+		/* 61 */ { "x" : 142, "y" : 154, "cMask" : ["c3" ], "curve" : 30 },
+		/* 62 */ { "x" : 144, "y" : 87.00000000000003, "cMask" : ["ball" ], "curve" : 0, "color" : "151517" },
+		/* 63 */ { "x" : 144, "y" : 154, "cMask" : ["c3" ], "curve" : 30 },
+		/* 64 */ { "x" : 146, "y" : 87.00000000000003, "cMask" : ["c3" ], "color" : "151517", "curve" : 0 },
+		/* 65 */ { "x" : 146, "y" : 154, "cMask" : ["c3" ], "curve" : 30 },
+		/* 66 */ { "x" : -250, "y" : 91.33333333333333, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 67 */ { "x" : 250, "y" : 91.33333333333333, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 68 */ { "x" : -250, "y" : 87, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 69 */ { "x" : 250, "y" : 87, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 70 */ { "x" : -250, "y" : 85.5, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 71 */ { "x" : 250, "y" : 85.5, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 72 */ { "x" : -250, "y" : 84, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 73 */ { "x" : 250, "y" : 84, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 74 */ { "x" : -250, "y" : 82.5, "cMask" : ["ball" ], "color" : "151517", "bias" : 0 },
+		/* 75 */ { "x" : 250, "y" : 82.5, "cMask" : ["ball" ], "color" : "151517", "bias" : 0 },
+		/* 76 */ { "x" : -250, "y" : 89, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 77 */ { "x" : 250, "y" : 89, "cMask" : ["ball" ], "color" : "151517", "bias" : 0, "curve" : 0 },
+		/* 78 */ { "x" : -800, "y" : 185, "cMask" : ["ball","red","blue" ], "color" : "e6b867", "bias" : 20, "curve" : 0 },
+		/* 79 */ { "x" : 800, "y" : 185, "cMask" : ["ball","red","blue" ], "color" : "e6b867", "bias" : 20, "curve" : 0 },
+		/* 80 */ { "x" : -800, "y" : 187, "cMask" : ["ball","red","blue" ], "color" : "e7b968", "curve" : 0 },
+		/* 81 */ { "x" : 800, "y" : 187, "cMask" : ["ball","red","blue" ], "color" : "e7b968", "curve" : 0 },
+		/* 82 */ { "x" : -800, "y" : 189, "cMask" : ["ball","red","blue" ], "color" : "DCAB5E", "curve" : 0 },
+		/* 83 */ { "x" : 800, "y" : 189, "cMask" : ["ball","red","blue" ], "color" : "DCAB5E", "curve" : 0 },
+		/* 84 */ { "x" : -800, "y" : 191, "cMask" : ["ball","red","blue" ], "color" : "eabc6b", "curve" : 0 },
+		/* 85 */ { "x" : 800, "y" : 191, "cMask" : ["ball","red","blue" ], "color" : "eabc6b", "curve" : 0 },
+		/* 86 */ { "x" : -800, "y" : 193, "cMask" : ["ball","red","blue" ], "color" : "e4b366", "curve" : 0 },
+		/* 87 */ { "x" : 800, "y" : 193, "cMask" : ["ball","red","blue" ], "color" : "e4b366", "curve" : 0 },
+		/* 88 */ { "x" : -800, "y" : 195, "cMask" : ["ball","red","blue" ], "color" : "ecbe6d", "curve" : 0 },
+		/* 89 */ { "x" : 800, "y" : 195, "cMask" : ["ball","red","blue" ], "color" : "ecbe6d", "curve" : 0 },
+		/* 90 */ { "x" : -800, "y" : 197, "cMask" : ["ball","red","blue" ], "color" : "D3A45A", "curve" : 0 },
+		/* 91 */ { "x" : 800, "y" : 197, "cMask" : ["ball","red","blue" ], "color" : "D3A45A", "curve" : 0 },
+		/* 92 */ { "x" : -800, "y" : 199, "cMask" : ["ball","red","blue" ], "color" : "eaba68", "curve" : 0 },
+		/* 93 */ { "x" : 800, "y" : 199, "cMask" : ["ball","red","blue" ], "color" : "eaba68", "curve" : 0 },
+		/* 94 */ { "x" : -800, "y" : 201, "cMask" : ["ball","red","blue" ], "color" : "efc170", "curve" : 0 },
+		/* 95 */ { "x" : 800, "y" : 201, "cMask" : ["ball","red","blue" ], "color" : "efc170", "curve" : 0 },
+		/* 96 */ { "x" : -800, "y" : 203, "cMask" : ["ball","red","blue" ], "color" : "D3A45A", "curve" : 0 },
+		/* 97 */ { "x" : 800, "y" : 203, "cMask" : ["ball","red","blue" ], "color" : "D3A45A", "curve" : 0 },
+		/* 98 */ { "x" : -250, "y" : 80, "bCoef" : 1, "cMask" : ["ball" ], "color" : "2EA0E4", "bias" : 10 },
+		/* 99 */ { "x" : 250, "y" : 80, "bCoef" : 1, "cMask" : ["ball" ], "color" : "2EA0E4", "bias" : 10 },
+		/* 100 */ { "x" : -18, "y" : 120, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 101 */ { "x" : -18, "y" : 103.5, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 102 */ { "x" : 0, "y" : 120, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 103 */ { "x" : 0, "y" : 103.5, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 104 */ { "x" : 18, "y" : 120, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 105 */ { "x" : 18, "y" : 103.5, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 106 */ { "x" : -9, "y" : 126, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 107 */ { "x" : -9, "y" : 109.5, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 108 */ { "x" : 9, "y" : 126, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 109 */ { "x" : 9, "y" : 109.5, "cMask" : ["c3" ], "curve" : 180, "color" : "50586D" },
+		/* 110 */ { "x" : -40, "y" : 813, "cMask" : ["c3" ] },
+		/* 111 */ { "x" : 16, "y" : 829, "cMask" : ["c3" ] },
+		/* 112 */ { "x" : -0.5, "y" : 150.4210667872197, "color" : "50586D" },
+		/* 113 */ { "x" : -0.5, "y" : 177.3785568585418, "color" : "50586D" },
+		/* 114 */ { "x" : 0.5, "y" : 150.4210667872197, "color" : "50586D" },
+		/* 115 */ { "x" : 0.5, "y" : 177.3785568585418, "color" : "50586D" },
+		/* 116 */ { "x" : 13, "y" : 149.85945241073384, "color" : "50586D" },
+		/* 117 */ { "x" : -13, "y" : 149.85945241073384, "color" : "50586D", "curve" : 90 },
+		/* 118 */ { "x" : 14, "y" : 150.70187397546266, "color" : "50586D" },
+		/* 119 */ { "x" : -14, "y" : 150.70187397546266, "color" : "50586D", "curve" : 90 }
+
+	],
+
+	"segments" : [
+		{ "v0" : 0, "v1" : 1, "color" : "18181A", "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : 0, "x" : 0 },
+		{ "v0" : 2, "v1" : 3, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -216 },
+		{ "v0" : 4, "v1" : 5, "curve" : 0, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -144 },
+		{ "v0" : 6, "v1" : 7, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -146 },
+		{ "v0" : 8, "v1" : 9, "curve" : 0, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -142 },
+		{ "v0" : 11, "v1" : 10, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0 },
+		{ "v0" : 13, "v1" : 12, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "y" : 162 },
+		{ "v0" : 15, "v1" : 14, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "y" : 164 },
+		{ "v0" : 16, "v1" : 17, "vis" : false, "color" : "18181A", "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : 5, "x" : 5 },
+		{ "v0" : 18, "v1" : 19, "vis" : false, "color" : "18181A", "bCoef" : 0.1, "cMask" : ["ball","red","blue" ], "bias" : -5, "x" : -5 },
+		{ "v0" : 20, "v1" : 21, "vis" : false, "bCoef" : 0, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ], "x" : -250 },
+		{ "v0" : 22, "v1" : 23, "vis" : false, "bCoef" : 0, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ], "x" : 250 },
+		{ "v0" : 24, "v1" : 25, "vis" : false, "bCoef" : 0, "cMask" : ["red","blue" ] },
+		{ "v0" : 26, "v1" : 27, "vis" : false, "color" : "2EA0E4", "bCoef" : 1, "cMask" : ["ball" ], "bias" : 20 },
+		{ "v0" : 28, "v1" : 29, "vis" : false, "color" : "2EA0E4", "bCoef" : 1, "cMask" : ["ball" ], "bias" : 20 },
+		{ "v0" : 27, "v1" : 28, "vis" : false, "color" : "2EA0E4", "bCoef" : 1, "cMask" : ["ball" ], "bias" : 20 },
+		{ "v0" : 30, "v1" : 31, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -204 },
+		{ "v0" : 32, "v1" : 33, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -202 },
+		{ "v0" : 34, "v1" : 35, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -200 },
+		{ "v0" : 36, "v1" : 37, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -198 },
+		{ "v0" : 38, "v1" : 39, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -196 },
+		{ "v0" : 40, "v1" : 41, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -194 },
+		{ "v0" : 42, "v1" : 43, "curve" : 30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : -192 },
+		{ "v0" : 44, "v1" : 45, "curve" : -30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 206 },
+		{ "v0" : 46, "v1" : 47, "curve" : -30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 204 },
+		{ "v0" : 48, "v1" : 49, "curve" : -30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 202 },
+		{ "v0" : 50, "v1" : 51, "curve" : -30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 200 },
+		{ "v0" : 52, "v1" : 53, "curve" : -30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 198 },
+		{ "v0" : 54, "v1" : 55, "curve" : -30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 196 },
+		{ "v0" : 56, "v1" : 57, "curve" : -30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 194 },
+		{ "v0" : 58, "v1" : 59, "curve" : -30, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 192 },
+		{ "v0" : 60, "v1" : 61, "curve" : 0, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 142 },
+		{ "v0" : 62, "v1" : 63, "curve" : 0, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 144 },
+		{ "v0" : 64, "v1" : 65, "color" : "18181A", "cMask" : ["c3" ], "bias" : 0, "x" : 146 },
+		{ "v0" : 66, "v1" : 67, "curve" : 0, "color" : "151517", "cMask" : ["ball" ], "bias" : 0, "y" : 84 },
+		{ "v0" : 68, "v1" : 69, "curve" : 0, "color" : "151517", "cMask" : ["ball" ], "bias" : 0, "y" : 87 },
+		{ "v0" : 70, "v1" : 71, "curve" : 0, "color" : "151517", "cMask" : ["ball" ], "bias" : 0, "y" : 85.5 },
+		{ "v0" : 72, "v1" : 73, "curve" : 0, "color" : "151517", "cMask" : ["ball" ], "bias" : 0, "y" : 84 },
+		{ "v0" : 74, "v1" : 75, "color" : "151517", "cMask" : ["ball" ], "bias" : 0, "y" : 82.5 },
+		{ "v0" : 76, "v1" : 77, "curve" : 0, "color" : "151517", "cMask" : ["ball" ], "bias" : 0, "y" : 89 },
+		{ "v0" : 78, "v1" : 79, "curve" : 0, "color" : "e6b867", "cMask" : ["ball","red","blue" ], "bias" : 20, "y" : 185 },
+		{ "v0" : 80, "v1" : 81, "curve" : 0, "color" : "e7b968", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 187 },
+		{ "v0" : 82, "v1" : 83, "curve" : 0, "color" : "DCAB5E", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 189 },
+		{ "v0" : 84, "v1" : 85, "curve" : 0, "color" : "eabc6b", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 191 },
+		{ "v0" : 86, "v1" : 87, "curve" : 0, "color" : "e4b366", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 193 },
+		{ "v0" : 88, "v1" : 89, "curve" : 0, "color" : "ecbe6d", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 195 },
+		{ "v0" : 90, "v1" : 91, "curve" : 0, "color" : "D3A45A", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 197 },
+		{ "v0" : 92, "v1" : 93, "curve" : 0, "color" : "eaba68", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 199 },
+		{ "v0" : 94, "v1" : 95, "curve" : 0, "color" : "efc170", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 191 },
+		{ "v0" : 96, "v1" : 97, "curve" : 0, "color" : "D3A45A", "cMask" : ["ball","red","blue" ], "bias" : 0, "y" : 193 },
+		{ "v0" : 98, "v1" : 99, "color" : "2EA0E4", "bCoef" : 1, "cMask" : ["ball" ], "bias" : 10 },
+		{ "v0" : 100, "v1" : 101, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -18 },
+		{ "v0" : 101, "v1" : 100, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -18 },
+		{ "v0" : 102, "v1" : 103, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -133 },
+		{ "v0" : 103, "v1" : 102, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -133 },
+		{ "v0" : 104, "v1" : 105, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -115 },
+		{ "v0" : 105, "v1" : 104, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -115 },
+		{ "v0" : 106, "v1" : 107, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -9 },
+		{ "v0" : 107, "v1" : 106, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -9 },
+		{ "v0" : 108, "v1" : 109, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -133 },
+		{ "v0" : 109, "v1" : 108, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0, "x" : -133 },
+		{ "v0" : 110, "v1" : 111, "curve" : 180, "color" : "50586D", "cMask" : ["c3" ], "bias" : 0 },
+		{ "v0" : 119, "v1" : 117, "curve" : 90, "color" : "50586D", "bias" : 0 },
+		{ "v0" : 116, "v1" : 118, "curve" : 90, "color" : "50586D", "bias" : 0 },
+		{ "v0" : 112, "v1" : 113, "curve" : 0, "color" : "50586D", "bias" : 0 },
+		{ "v0" : 114, "v1" : 115, "curve" : 0, "color" : "50586D", "bias" : 0 },
+		{ "v0" : 117, "v1" : 116, "curve" : 0, "color" : "50586D", "bias" : 0 },
+		{ "v0" : 119, "v1" : 118, "curve" : 0, "color" : "50586D", "bias" : 0 }
+
+	],
+
+	"goals" : [
+		{ "p0" : [-580,175 ], "p1" : [580,175 ], "team" : "red" }
+
+	],
+
+	"discs" : [
+		{ "radius" : 6, "invMass" : 10, "pos" : [-300,-50 ], "color" : "FF7F00", "bCoef" : 0.95, "cMask" : ["all" ], "cGroup" : ["ball","kick","score" ], "damping" : 0.985, "gravity" : [0,0.18 ] },
+		{ "radius" : 1, "invMass" : 0, "pos" : [0,50 ], "color" : "000000", "bCoef" : 0.1, "cMask" : ["ball","red","blue" ] },
+		{ "radius" : 10000000, "invMass" : 0, "pos" : [0,10000203 ], "color" : "E2B062", "cGroup" : ["c0" ], "damping" : 0 }
+
+	],
+
+	"planes" : [
+		{ "normal" : [0,-1 ], "dist" : -185, "cMask" : ["ball","red","blue" ] },
+		{ "normal" : [0,1 ], "dist" : -200, "bCoef" : 0, "cMask" : ["red","blue" ] },
+		{ "normal" : [-1,0 ], "dist" : -580, "bCoef" : 1, "cMask" : ["ball" ] },
+		{ "normal" : [1,0 ], "dist" : -580, "bCoef" : 1, "cMask" : ["ball" ] }
+
+	],
+
+	"joints" : [
+		
+
+	],
+
+	"playerPhysics" : {
+		"radius" : 30,
+		"bCoef" : 0.1,
+		"kickingAcceleration" : 0.4,
+		"acceleration" : 0.3,
+		"damping" : 0.9,
+		"kickStrength" : 1.1,
+		"invMass" : 0.001,
+		"kickingDamping" : 0.9
+
+	},
+
+	"ballPhysics" : "disc0"
+}
